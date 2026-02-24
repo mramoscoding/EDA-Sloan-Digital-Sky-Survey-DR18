@@ -63,7 +63,7 @@ jupyter notebook SDSS_dr18.ipynb
 
 ## Project structure
 ```
-sdss-eda/
+EDA-Sloan-Digital-Sky-Survey-DR18/
 ├── SDSS_dr18.ipynb       # Main analysis notebook
 ├── requirements.txt       # Python dependencies
 ├── README.md             # This file
@@ -77,7 +77,7 @@ sdss-eda/
 ### General data
 - 100,000 astronomical objects across 3 classes
 - 43 features including spectral magnitudes, coordinates, and redshift
-- Zero missing values
+- Zero missing values, some "9999" treated as NAs
 
 ### Main variables
 - **Photometric filters:** u, g, r, i, z (ultraviolet to near-infrared)
@@ -96,7 +96,7 @@ sdss-eda/
 ## What I learned
 
 - **Physics:** Deepened my understanding of spectroscopy, redshift, and cosmic object classification
-- **Statistics:** Applied robust methods for outlier detection and correlation analysis on astronomical data
+- **Statistics:** Analytical, logical and mathematical methods for outlier detection and correlation analysis on astronomical data
 - **Communication:** Translated complex astrophysics concepts into clear insights
 - **Python:** Advanced use of Pandas and Seaborn for large dataset analysis
 - **Interdisciplinarity:** Combined physics knowledge with data science techniques
@@ -117,7 +117,7 @@ sdss-eda/
 
 Analysis based on the **SDSS DR18** dataset.
 
-**Source:** [Sloan Digital Sky Survey](https://www.sdss.org/dr18/)
+**Source:** [Sloan Digital Sky Survey DR18 (Kaggle)](https://www.kaggle.com/datasets/diraf0/sloan-digital-sky-survey-dr18)
 
 **Note:** The dataset is not included in this repository due to its size. Download it directly from SDSS and place `SDSS_DR18.csv` in the project root.
 
@@ -126,15 +126,15 @@ Analysis based on the **SDSS DR18** dataset.
 ## About me
 
 **Manuel Ramos Alascio**  
-Data Science & Business Analytics student | Physics enthusiast
+Data Science & Business Analytics student 
 
-- 🎓 Master's in Data Science @ IMF Smart School (Madrid)
-- 💼 Professional Services intern @ Celonis
-- 🔬 Background: Business Administration (Universidad de Granada)
-- 🔭 Passionate about applying data science to understand the universe
+- Master's in Data Science @ IMF Smart School (Madrid)
+- Professional Services intern @ Celonis
+- Background: Business Administration (Universidad de Granada)
+- Passionate about applying data science to understand the human world and the universe
 
 **Connect with me:**  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR-PROFILE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/manuel-ramos-alascio-7b52a8188/)
 
 ---
 
@@ -142,7 +142,6 @@ Data Science & Business Analytics student | Physics enthusiast
 
 - **Dataset:** Sloan Digital Sky Survey (SDSS) Collaboration
 - **Academic program:** IMF Smart School - Data Science & Business Analytics
-- **Course module:** Statistics and data visualization (Module 3)
 - **Motivation:** Combining my passion for physics with data science
 
 ---
@@ -150,4 +149,5 @@ Data Science & Business Analytics student | Physics enthusiast
 <p align="center">
   <i>If you found this interesting, consider giving it a ⭐</i>
 </p>
+
 
