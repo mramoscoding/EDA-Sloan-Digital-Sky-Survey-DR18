@@ -46,8 +46,8 @@ Python 3.13
 ## How to run it
 ```bash
 # Clone repository
-git clone https://github.com/YOUR-USERNAME/sdss-eda.git
-cd sdss-eda
+git clone https://github.com/mramoscoding/EDA-Sloan-Digital-Sky-Survey-DR18.git
+cd EDA-Sloan-Digital-Sky-Survey-DR18
 
 # Install dependencies
 pip install -r requirements.txt
@@ -150,3 +150,4 @@ Data Science & Business Analytics student | Physics enthusiast
 <p align="center">
   <i>If you found this interesting, consider giving it a ⭐</i>
 </p>
+
