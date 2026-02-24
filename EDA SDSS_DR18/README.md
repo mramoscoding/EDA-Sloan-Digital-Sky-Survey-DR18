@@ -1,53 +1,49 @@
-# SDSS DR18: Exploratory Data Analysis
-### Analyzing 100,000 Cosmic Objects with Python
+# SDSS DR18: Exploratory data analysis
+### Analyzing 100,000 astronomical objects with Python
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.13-blue?logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/Status-Complete-success" />
-  <img src="https://img.shields.io/badge/Objects-100K-orange" />
-  <img src="https://img.shields.io/badge/License-MIT-green" />
 </p>
 
 ---
 
-## 📖 About This Project
+## About the project
 
-This project explores the **Sloan Digital Sky Survey Data Release 18 (SDSS DR18)**, containing spectroscopic and photometric data from 100,000 astronomical objects.
+Exploratory analysis of the **Sloan Digital Sky Survey Data Release 18**, a dataset containing spectroscopic and photometric data from 100,000 astronomical objects.
 
-**Goal:** Identify spectral patterns that distinguish galaxies, stars, and quasars using statistical analysis and data visualization techniques.
-
-**Why it matters:** Understanding cosmic object classification is fundamental for large-scale astronomical surveys and helps reveal the structure and evolution of our universe.
+**Goal:** Identify spectral patterns that distinguish between galaxies, stars, and quasars using statistical analysis and data visualization.
 
 ---
 
-## 🎯 Key Findings
+## Key findings
 
-| Object Type | Population | UV Outliers (%) | Interpretation |
+| Object type | Population | UV outliers (%) | Interpretation |
 |------------|------------|-----------------|----------------|
-| **Galaxies** | 52,207 (52.2%) | 0.20% | Stable spectral signatures due to statistical averaging |
+| **Galaxies** | 52,207 (52.2%) | 0.20% | Stable spectral signatures due to averaging effect |
 | **Stars** | 37,192 (37.2%) | 7.47% | High variability from nuclear fusion processes |
 | **Quasars** | 10,414 (10.4%) | 6.51% | Extreme energetic events from supermassive black holes |
 
-**Main Insight:** The UV signature (u-g color index) serves as an excellent discriminator for astronomical object classification, with stars showing 37× more outliers than galaxies.
+**Main conclusion:** The UV signature (u-g color index) works as an excellent discriminator for classifying astronomical objects. Stars show 37× more outliers than galaxies.
 
 ---
 
-## 🔬 Technical Stack
+## Tech stack
 ```python
 Python 3.13
-├── pandas        # Data manipulation and analysis
+├── pandas        # Data manipulation
 ├── numpy         # Numerical computing
 ├── matplotlib    # Static visualizations
-└── seaborn       # Statistical data visualization
+└── seaborn       # Statistical plots
 ```
 
 **Dataset:** SDSS DR18 (100,000 objects × 43 features)  
-**Analysis Type:** Exploratory Data Analysis (EDA)  
+**Analysis type:** EDA  
 **Techniques:** Outlier detection, correlation analysis, distribution fitting
 
 ---
 
-## 🚀 Quick Start
+## How to run it
 ```bash
 # Clone repository
 git clone https://github.com/YOUR-USERNAME/sdss-eda.git
@@ -57,7 +53,7 @@ cd sdss-eda
 pip install -r requirements.txt
 
 # Download dataset
-# Place SDSS_DR18.csv in the project root (not included due to size)
+# Place SDSS_DR18.csv in the project root
 
 # Run notebook
 jupyter notebook SDSS_dr18.ipynb
@@ -65,31 +61,31 @@ jupyter notebook SDSS_dr18.ipynb
 
 ---
 
-## 📁 Project Structure
+## Project structure
 ```
 sdss-eda/
-├── SDSS_dr18.ipynb       # Main analysis notebook with EDA
+├── SDSS_dr18.ipynb       # Main analysis notebook
 ├── requirements.txt       # Python dependencies
-├── README.md             # Project documentation (this file)
-└── .gitignore            # Git ignore rules
+├── README.md             # This file
+└── .gitignore            # Git rules
 ```
 
 ---
 
-## 📊 Analysis Highlights
+## What I analyzed
 
-### Data Overview
-- **100,000 astronomical objects** across three classes
-- **43 features** including spectral magnitudes, coordinates, and redshift
-- **Zero missing values** - clean, production-ready dataset
+### General data
+- 100,000 astronomical objects across 3 classes
+- 43 features including spectral magnitudes, coordinates, and redshift
+- Zero missing values
 
-### Key Variables Analyzed
+### Main variables
 - **Photometric filters:** u, g, r, i, z (ultraviolet to near-infrared)
 - **Color indices:** u-g (UV signature), g-r, r-i
 - **Redshift:** Cosmological distance indicator
 - **Petrosian metrics:** Galaxy morphology parameters
 
-### Statistical Methods
+### Statistical methods
 - Correlation analysis between spectral bands
 - Outlier detection using IQR method
 - Distribution analysis by object class
@@ -97,70 +93,60 @@ sdss-eda/
 
 ---
 
-## 📚 What I Learned
+## What I learned
 
-- **Domain Knowledge:** Deepened understanding of spectroscopy, redshift, and cosmic object classification
-- **Statistical Techniques:** Applied robust methods for outlier detection and correlation analysis on astronomical data
-- **Data Storytelling:** Translated complex astrophysics concepts into clear, actionable insights
-- **Python Libraries:** Advanced usage of Pandas and Seaborn for large-scale dataset analysis
-- **Physics + Data Science:** Combined domain expertise in physics with data analysis skills
-
----
-
-## 🌟 Why This Project Stands Out
-
-- ✨ **Domain Expertise:** Combines physics knowledge with data science techniques
-- 📊 **Scale:** 100K+ observations analyzed with robust statistical methods
-- 🔍 **Insight-Driven:** Physically-grounded interpretations, not just visualizations
-- 📝 **Documentation:** Clear explanations accessible to non-astronomers
-- 🎓 **Academic Rigor:** Applied statistical methods learned in Master's program
+- **Physics:** Deepened my understanding of spectroscopy, redshift, and cosmic object classification
+- **Statistics:** Applied robust methods for outlier detection and correlation analysis on astronomical data
+- **Communication:** Translated complex astrophysics concepts into clear insights
+- **Python:** Advanced use of Pandas and Seaborn for large dataset analysis
+- **Interdisciplinarity:** Combined physics knowledge with data science techniques
 
 ---
 
-## 📦 Dataset
+## Why this project stands out
 
-This analysis uses the **SDSS DR18** dataset.
+- Combines physics knowledge with data science techniques
+- 100K+ observations analyzed with robust statistical methods
+- Interpretations grounded in the physics of the objects, not just charts
+- Clear documentation accessible to non-astronomers
+- Applies statistical rigor learned in master's program
+
+---
+
+## Dataset
+
+Analysis based on the **SDSS DR18** dataset.
 
 **Source:** [Sloan Digital Sky Survey](https://www.sdss.org/dr18/)
 
-**Note:** The dataset is not included in this repository due to size constraints. Please download it directly from SDSS and place `SDSS_DR18.csv` in the project root directory.
+**Note:** The dataset is not included in this repository due to its size. Download it directly from SDSS and place `SDSS_DR18.csv` in the project root.
 
 ---
 
-## 👤 About Me
+## About me
 
 **Manuel Ramos Alascio**  
-Data Science & Business Analytics Student | Physics Enthusiast
+Data Science & Business Analytics student | Physics enthusiast
 
 - 🎓 Master's in Data Science @ IMF Smart School (Madrid)
-- 💼 Professional Services Intern @ Celonis
+- 💼 Professional Services intern @ Celonis
 - 🔬 Background: Business Administration (Universidad de Granada)
-- 🔭 Passionate about applying data science to understand the physical universe
+- 🔭 Passionate about applying data science to understand the universe
 
 **Connect with me:**  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/YOUR-PROFILE)
 
 ---
 
-## 📄 License
-
-This project is open source and available under the MIT License.
-
----
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Dataset:** Sloan Digital Sky Survey (SDSS) Collaboration
-- **Academic Program:** IMF Smart School - Data Science & Business Analytics
-- **Course Module:** Statistics and Data Visualization (Module 3)
-- **Inspiration:** Combining my passion for physics with emerging data science skills
+- **Academic program:** IMF Smart School - Data Science & Business Analytics
+- **Course module:** Statistics and data visualization (Module 3)
+- **Motivation:** Combining my passion for physics with data science
 
 ---
 
 <p align="center">
-  <i>If you found this project interesting, please consider giving it a ⭐</i>
-</p>
-
-<p align="center">
-  <sub>Created with passion for understanding the cosmos through data | December 2025 - January 2026</sub>
+  <i>If you found this interesting, consider giving it a ⭐</i>
 </p>
